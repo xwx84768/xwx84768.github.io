@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Xiangwen Wang"
+title                    : "Xiangwen Wang | UIUC"
 title_separator          : "-"
 name                     : &name "Xiangwen Wang"
 description              : &description "MSCS student at UIUC."
