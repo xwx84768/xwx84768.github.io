@@ -10,3 +10,4 @@ paperurl: "https://aclanthology.org/2024.privatenlp-1.17.pdf"
 <img src="/images/rl.png" alt="RLTA">
 
 We design **RLTA**, a reinforcement learning-driven LLM agent for automated prompt-based attacks against target language models. RLTA explores and optimizes malicious prompts to increase attack success rates for both trojan detection and jailbreak tasks, outperforming baseline methods in black-box settings.
+
