@@ -2,7 +2,6 @@
 title: "Aligning Compound AI Systems via System-level DPO"
 collection: publications
 permalink: /publication/sysdpo/
-date: 2025-12-01
 venue: "NeurIPS 2025"
 authors: "Xiangwen Wang*, Yibo Jacky Zhang*, Zhoujie Ding, Katherine Tsai, Haolun Wu, Sanmi Koyejo"
 paperurl: "https://arxiv.org/pdf/2502.17721"
