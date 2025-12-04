@@ -21,7 +21,7 @@ repository               : "xwx84768/xwx84768.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profile.png"
   name             : "Xiangwen Wang"
   pronouns         : # example: "she/her"  
   bio              : "MSCS student at UIUC. Research on AI alignment, preference learning, and LLM safety."
