@@ -5,30 +5,30 @@ title: "Xiangwen Wang"
 author_profile: true
 ---
 
-Hi! I'm **Xiangwen Wang (王香雯)**, a first-year MSCS student at the University of Illinois Urbana–Champaign (UIUC). My research interests lie in **AI alignment**, **preference learning**, and **post-training for large language models**, with a focus on the safety and reliability of complex **compound AI systems**.
+Hi! I'm **Xiangwen Wang (王香雯)**, a first-year MSCS student at the University of Illinois Urbana–Champaign (UIUC), where I am fortunate to be advised by Professor [Varun Chandrasekaran](https://chandrasekaran-group.github.io/). I received my bachelor's degree from the School of the Gifted Young, University of Science and Technology of China (USTC), and I also spent a summer as a research intern at STAIR LAB, Stanford University.
 
-Previously, I spent a summer as a research intern at **Stanford University** and was a visiting student at **UC Berkeley**. I have also collaborated with research groups at **UNC Chapel Hill** and **USTC** on LLM safety, adversarial robustness, and trustworthy machine learning.
+My research interests lie broadly in **post-training for large language models** and **trustworthy AI**, with a focus on AI alignment, LLM security, and the reliability of multi-component and multi-agent systems.  
+My long-term goal is to build AI systems that are **safe, robust, and value-aligned**, especially as they scale into complex, real-world settings.
 
-My long-term goal is to build AI systems that are **safe, robust, and value-aligned**, even when deployed as multi-component or multi-agent systems.
+---
 
-### Research Interests
+## Research Interests
 
 - **AI Alignment & Preference Learning**  
-  System-level alignment, Direct Preference Optimization (DPO), alignment of compound systems
+  Aligning LLMs with human values, improving preference-optimization algorithms, and aligning compound systems.
 
 - **LLM Safety & Reliability**  
-  Jailbreak and trojan attacks, RL-based red-teaming, post-training safety
+  Jailbreak and backdoor attacks, red-teaming, post-training safety, and scalable evaluations.
 
-- **Adversarial Robustness**  
-  Detection and characterization of adversarial examples, generalization to unseen attacks
+- **Multi-agent & Compound AI Systems**  
+  Studying interactions, coordination, and optimization in multi-agent or multi-component AI systems.
 
-### Selected News
+---
 
-- **NeurIPS 2025** – *Aligning Compound AI Systems via System-level DPO* accepted.  
-- **ICME 2025** – *Adversarial Examples Detection Based on Adversarial Attack Sensitivity* accepted.  
-- **ACL 2024 (Oral)** – *Reinforcement Learning-Driven LLM Agent for Automated Attacks on LLMs* accepted at the Privacy in NLP workshop.
+## Publications
 
-### Contact
+{% include base_path %}
 
-- Email: `xw120@illinois.edu`  
-- GitHub: [xwx84768](https://github.com/xwx84768)
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}
