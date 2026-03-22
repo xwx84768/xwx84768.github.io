@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/adas/
 venue: "ICME 2025"
 authors: "Cong Ming, Haojie Yuan, Xiangwen Wang, Qi Chu, Tao Gong, Bin Liu, Nenghai Yu"
-paperurl: ""
+paperurl: "https://ieeexplore.ieee.org/abstract/document/11209495"
 ---
 
 <img src="/images/adas.png" alt="ADAS">
