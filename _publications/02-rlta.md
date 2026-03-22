@@ -7,7 +7,8 @@ authors: "Xiangwen Wang, Jie Peng, Kaidi Xu, Huaxiu Yao, Tianlong Chen"
 paperurl: "https://aclanthology.org/2024.privatenlp-1.17.pdf"
 ---
 
-<img src="/images/rl.png" alt="RLTA">
-
-We design **RLTA**, a reinforcement learning-driven LLM agent for automated prompt-based attacks against target language models. RLTA explores and optimizes malicious prompts to increase attack success rates for both trojan detection and jailbreak tasks, outperforming baseline methods in black-box settings.
+<div style="display: flex; align-items: flex-start; gap: 20px;">
+  <img src="/images/rl.png" alt="RLTA" style="width: 220px; flex-shrink: 0;">
+  <p>We design <strong>RLTA</strong>, a reinforcement learning-driven LLM agent for automated prompt-based attacks against target language models. RLTA explores and optimizes malicious prompts to increase attack success rates for both trojan detection and jailbreak tasks, outperforming baseline methods in black-box settings.</p>
+</div>
 
