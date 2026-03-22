@@ -19,6 +19,7 @@
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
+    @include prefix(0.25 of 12);
     @include suffix(2 of 12);
   }
 
@@ -85,6 +86,10 @@
 
   .archive__item-title a {
     text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   dt {
