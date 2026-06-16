@@ -28,16 +28,21 @@ layout: compress
     {% include scripts.html %}
   <style>
     .hidden-tracker {
-      position: absolute;
-      left: -9999px;
-      visibility: hidden;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      width: 320px;
+      height: 320px;
+      overflow: hidden;
+      opacity: 0;
+      pointer-events: none;
     }
   </style>
 
   <!-- 访客统计 (隐藏) -->
-  <div class="hidden-tracker">
-    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=WRckrvAXv1geAiOKktHsIshE68792_7tuLk_ic1uqW8"></script>
-    <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=pocaua5JJvuID36gN4ctEO2S5Ug7CaJDLjAAWBHSw9A"></script>
+  <div class="hidden-tracker" aria-hidden="true">
+    <script type="text/javascript" id="clstr_globe" src="https://clustrmaps.com/globe.js?d=WRckrvAXv1geAiOKktHsIshE68792_7tuLk_ic1uqW8"></script>
+    <script type="text/javascript" id="mmvst_globe" src="https://mapmyvisitors.com/globe.js?d=pocaua5JJvuID36gN4ctEO2S5Ug7CaJDLjAAWBHSw9A"></script>
   </div>
   </body>
 </html>
