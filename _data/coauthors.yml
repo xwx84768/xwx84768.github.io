@@ -1,0 +1,6 @@
+# Optional homepage links for co-authors.
+# A name listed here is linked wherever it appears in a publication's author line.
+# The name must match the entry under `authors:` in _publications/*.md exactly
+# (without any * or † marker).
+
+"Varun Chandrasekaran": "https://chandrasekaran-group.github.io/"

@@ -1,0 +1,24 @@
+{% comment %}
+  One publication as a card: figure, title, authors, venue, links.
+  The summary lives on the paper's own page, reached from the title, the figure, or "Details".
+  Usage: {% include publication-card.html pub=post %}
+{% endcomment %}
+{% include base_path %}
+{% assign pub = include.pub %}
+
+<article class="pub" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  {% if pub.image %}
+    <a class="pub__media" href="{{ base_path }}{{ pub.url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ base_path }}/images/{{ pub.image }}" alt="" loading="lazy">
+    </a>
+  {% else %}
+    <a class="pub__media pub__media--empty" href="{{ base_path }}{{ pub.url }}" tabindex="-1" aria-hidden="true">
+      <span>{{ pub.short | default: pub.title }}</span>
+    </a>
+  {% endif %}
+
+  <div class="pub__body">
+    <h4 class="pub__title" itemprop="headline"><a href="{{ base_path }}{{ pub.url }}">{{ pub.title }}</a></h4>
+    {% include publication-meta.html pub=pub details=true %}
+  </div>
+</article>

@@ -74,14 +74,13 @@ author:
   youtube          : # Username
   zhihu            : # Username
 
-# Publication Category - The following the list of publication categories and their headings
+# Publication Category - The following the list of publication categories and their headings.
+# Each file in _publications/ picks one with `category:`; groups are shown in this order.
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
+  conference:
     title: 'Conference Papers'
+  workshop:
+    title: 'Workshop Papers & Under Review'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -260,7 +259,7 @@ defaults:
       path: ""
       type: publications
     values:
-      layout: single
+      layout: publication
       author_profile: true
       share: false
       comments: false

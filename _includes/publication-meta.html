@@ -1,0 +1,42 @@
+{% comment %}
+  Authors, venue, and links for one publication. Shared by the card and the detail page.
+  Usage: {% include publication-meta.html pub=post details=true %}
+    details=true adds a "Details" link to the paper's own page (used on cards).
+{% endcomment %}
+{% assign pub = include.pub %}
+
+<p class="pub__authors">
+  {%- for author in pub.authors -%}
+    {%- assign name = author | remove: "*" | remove: "†" | strip -%}
+    {%- assign mark = author | remove: name | strip -%}
+    {%- if name == site.author.name -%}
+      <strong>{{ name }}{{ mark }}</strong>
+    {%- elsif site.data.coauthors[name] -%}
+      <a href="{{ site.data.coauthors[name] }}">{{ name }}</a>{{ mark }}
+    {%- else -%}
+      {{ name }}{{ mark }}
+    {%- endif -%}
+    {%- unless forloop.last -%}, {% endunless -%}
+  {%- endfor -%}
+  {%- if pub.author_note %} <span class="pub__author-note">({{ pub.author_note }})</span>{% endif -%}
+</p>
+
+<p class="pub__venue">
+  {{- pub.venue | markdownify | remove: "<p>" | remove: "</p>" | strip -}}
+  {%- if pub.award %} (<span class="pub__hl">{{ pub.award }}</span>){% endif -%}
+</p>
+
+{% if pub.note %}
+  <p class="pub__note">{{ pub.note | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+{% endif %}
+
+{% if pub.links or include.details %}
+  <p class="pub__links">
+    {%- for link in pub.links -%}
+      <a href="{{ link.url }}">{{ link.label }}</a>
+    {%- endfor -%}
+    {%- if include.details -%}
+      <a class="pub__link--quiet" href="{{ base_path }}{{ pub.url }}">Details</a>
+    {%- endif -%}
+  </p>
+{% endif %}

@@ -1,14 +1,22 @@
 ---
 title: "Reinforcement Learning-Driven LLM Agent for Automated Attacks on LLMs"
+short: "RLTA"
 collection: publications
 permalink: /publication/rlta/
-venue: "ACL 2024 Workshop on Privacy in NLP (Oral)"
-authors: "Xiangwen Wang, Jie Peng, Kaidi Xu, Huaxiu Yao, Tianlong Chen"
-paperurl: "https://aclanthology.org/2024.privatenlp-1.17.pdf"
+category: workshop
+order: 2
+authors:
+  - Xiangwen Wang
+  - Jie Peng
+  - Kaidi Xu
+  - Huaxiu Yao
+  - Tianlong Chen
+venue: "ACL 2024 Workshop on Privacy in Natural Language Processing"
+award: "Oral"
+image: rl.png
+links:
+  - label: Paper
+    url: "https://aclanthology.org/2024.privatenlp-1.17.pdf"
 ---
 
-<div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/images/rl.png" alt="RLTA" style="width: 220px; flex-shrink: 0;">
-  <p>We design <strong>RLTA</strong>, a reinforcement learning-driven LLM agent for automated prompt-based attacks against target language models. RLTA explores and optimizes malicious prompts to increase attack success rates for both trojan detection and jailbreak tasks, outperforming baseline methods in black-box settings.</p>
-</div>
-
+We design **RLTA**, a reinforcement learning-driven LLM agent for automated prompt-based attacks against target language models. RLTA explores and optimizes malicious prompts to increase attack success rates for both trojan detection and jailbreak tasks, outperforming baseline methods in black-box settings.

@@ -1,0 +1,21 @@
+{% comment %}
+  All publications as cards, grouped by `category` and sorted by `order` (both set in
+  each _publications/*.md). Groups and their headings come from `publication_category`
+  in _config.yml; a group with no papers is skipped.
+
+  The HTML below is deliberately not indented: this include is used inside Markdown
+  pages, where lines indented by four or more spaces turn into code blocks.
+{% endcomment %}
+{% for category in site.publication_category %}
+{% assign pubs = site.publications | where: "category", category[0] | sort: "order" %}
+{% if pubs.size > 0 %}
+<section class="pub-section">
+<h3 class="pub-group">{{ category[1].title }}</h3>
+<div class="pub-list">
+{% for pub in pubs %}
+{% include publication-card.html pub=pub %}
+{% endfor %}
+</div>
+</section>
+{% endif %}
+{% endfor %}
